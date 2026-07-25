@@ -9,6 +9,10 @@
 
 ---
 
+## 📚 相关教程
+
+- [Grok build 制作热门 Codex 桌宠](https://mp.weixin.qq.com/s/VNZ2Kj59UJ-8fYG819YrQgGrok) —— 本素材集的制作思路来源,介绍如何用 Grok build 生成可用于 Codex 桌宠的角色立绘与 Spritesheet。
+
 ## ✨ 特性
 
 - **原创角色**，不参考任何既有动漫 / 游戏角色
