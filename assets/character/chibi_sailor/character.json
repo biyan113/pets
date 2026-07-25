@@ -1,0 +1,306 @@
+{
+  "id": "chibi_sailor_girl",
+  "displayName": "元气水手服少女",
+  "description": "原创 chibi 二次元女生角色。齐肩深棕短发、蓝白水手服、黑色过膝袜、圆脸大眼、元气活泼气质。状态行含待机/移动/挥手/跳跃/失败/等待确认/运行中/检查结果；方向行含正面与一整圈头部眼神朝向（screen-left/right 为画面左右，非角色自身左右）。",
+  "version": "1.0.0",
+  "style": {
+    "medium": "2d_anime_cel_shaded",
+    "proportions": "chibi",
+    "identityLock": [
+      "shoulder_length_dark_brown_hair",
+      "blue_white_sailor_uniform",
+      "black_over_knee_socks",
+      "round_face_big_eyes",
+      "energetic_personality"
+    ]
+  },
+  "masterRef": "assets/character/chibi_sailor/MASTER_REF.jpg",
+  "spritesheet": {
+    "path": "assets/character/chibi_sailor/sheet/chibi_sailor_spritesheet.webp",
+    "pathPng": "assets/character/chibi_sailor/sheet/chibi_sailor_spritesheet.png",
+    "format": "webp",
+    "background": "transparent",
+    "width": 2304,
+    "height": 684,
+    "cellWidth": 256,
+    "cellHeight": 342,
+    "columns": 9,
+    "rows": 2,
+    "layout": "row0=states, row1=look_directions"
+  },
+  "rows": [
+    {
+      "id": "states",
+      "row": 0,
+      "label": "状态行",
+      "frames": [
+        {
+          "id": "idle",
+          "label": "待机",
+          "col": 0,
+          "source": "assets/character/chibi_sailor/states/state_idle.jpg",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 0
+        },
+        {
+          "id": "move_right",
+          "label": "向右移动",
+          "col": 1,
+          "source": "assets/character/chibi_sailor/states/state_move_right.jpg",
+          "frame": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 1
+        },
+        {
+          "id": "move_left",
+          "label": "向左移动",
+          "col": 2,
+          "source": "assets/character/chibi_sailor/states/state_move_left.jpg",
+          "frame": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 2
+        },
+        {
+          "id": "wave",
+          "label": "挥手",
+          "col": 3,
+          "source": "assets/character/chibi_sailor/states/state_wave.jpg",
+          "frame": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 3
+        },
+        {
+          "id": "jump",
+          "label": "跳跃",
+          "col": 4,
+          "source": "assets/character/chibi_sailor/states/state_jump.jpg",
+          "frame": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 4
+        },
+        {
+          "id": "fail",
+          "label": "失败沮丧",
+          "col": 5,
+          "source": "assets/character/chibi_sailor/states/state_fail.jpg",
+          "frame": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 5
+        },
+        {
+          "id": "wait_confirm",
+          "label": "等待确认",
+          "col": 6,
+          "source": "assets/character/chibi_sailor/states/state_wait_confirm.jpg",
+          "frame": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 6
+        },
+        {
+          "id": "processing",
+          "label": "运行中",
+          "col": 7,
+          "source": "assets/character/chibi_sailor/states/state_processing.jpg",
+          "frame": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 7
+        },
+        {
+          "id": "check_results",
+          "label": "检查结果",
+          "col": 8,
+          "source": "assets/character/chibi_sailor/states/state_check_results.jpg",
+          "frame": {
+            "x": 2048,
+            "y": 0,
+            "w": 256,
+            "h": 342
+          },
+          "row": 0,
+          "index": 8
+        }
+      ]
+    },
+    {
+      "id": "looks",
+      "row": 1,
+      "label": "方向行（头部/眼神朝向，screen-left/right=画面左右）",
+      "frames": [
+        {
+          "id": "front",
+          "label": "正面",
+          "col": 0,
+          "source": "assets/character/chibi_sailor/looks/look_front.jpg",
+          "frame": {
+            "x": 0,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 0
+        },
+        {
+          "id": "up",
+          "label": "向上",
+          "col": 1,
+          "source": "assets/character/chibi_sailor/looks/look_up.jpg",
+          "frame": {
+            "x": 256,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 1
+        },
+        {
+          "id": "up_screen_right",
+          "label": "上-画面右",
+          "col": 2,
+          "source": "assets/character/chibi_sailor/looks/look_up_screen_right.jpg",
+          "frame": {
+            "x": 512,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 2
+        },
+        {
+          "id": "screen_right",
+          "label": "画面右",
+          "col": 3,
+          "source": "assets/character/chibi_sailor/looks/look_screen_right.jpg",
+          "frame": {
+            "x": 768,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 3
+        },
+        {
+          "id": "down_screen_right",
+          "label": "下-画面右",
+          "col": 4,
+          "source": "assets/character/chibi_sailor/looks/look_down_screen_right.jpg",
+          "frame": {
+            "x": 1024,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 4
+        },
+        {
+          "id": "down",
+          "label": "向下",
+          "col": 5,
+          "source": "assets/character/chibi_sailor/looks/look_down.jpg",
+          "frame": {
+            "x": 1280,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 5
+        },
+        {
+          "id": "down_screen_left",
+          "label": "下-画面左",
+          "col": 6,
+          "source": "assets/character/chibi_sailor/looks/look_down_screen_left.jpg",
+          "frame": {
+            "x": 1536,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 6
+        },
+        {
+          "id": "screen_left",
+          "label": "画面左",
+          "col": 7,
+          "source": "assets/character/chibi_sailor/looks/look_screen_left.jpg",
+          "frame": {
+            "x": 1792,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 7
+        },
+        {
+          "id": "up_screen_left",
+          "label": "上-画面左",
+          "col": 8,
+          "source": "assets/character/chibi_sailor/looks/look_up_screen_left.jpg",
+          "frame": {
+            "x": 2048,
+            "y": 342,
+            "w": 256,
+            "h": 342
+          },
+          "row": 1,
+          "index": 8
+        }
+      ],
+      "coordinateNote": "screen-right = right edge of the image; screen-left = left edge of the image; not character handedness"
+    }
+  ],
+  "sources": {
+    "statesDir": "assets/character/chibi_sailor/states/",
+    "looksDir": "assets/character/chibi_sailor/looks/",
+    "masterRef": "assets/character/chibi_sailor/MASTER_REF.jpg",
+    "manifest": "assets/MANIFEST.md"
+  }
+}
